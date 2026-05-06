@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chương 5: Ưu điểm và nhược điểm của VPN</title>
+	<link rel="stylesheet" href="KTHP_cacchuong.css">
+</head>
+
+<body>
+	<table cellspacing="15" align="center">
+		<tr>
+			<td>
+				<a class="menu" href="index.html">TRANG CHỦ</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_dgtv.html">BẢNG ĐÁNH GIÁ THÀNH VIÊN</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_tltk.html">TÀI LIỆU THAM KHẢO</a>
+			</td>
+		</tr>
+	</table>
+<div class="bg">
+	<hr noshade size="2" color="#696969" align="center" width="100%" style=" margin-top:0px; ">
+	<br> 
+    <!--header-->
+	 <h1 class="title" align="center">CHƯƠNG 5: ƯU ĐIỂM VÀ NHƯỢC ĐIỂM CỦA VPN</h1>
+	<br>
+	<!--ndung-->
+	<table width="95%" border=0 cellspacing="10" style=" margin-left: 40px;">
+        <tr>
+		<!--menu-->
+        <td width="75%" background="img/hn2.jpg">
+            <ul  style="list-style-type: none;" >
+                <li>
+                    <a class="ttc1" href="#c5.1">5.1. Ưu điểm của VPN</a>
+					<ul>
+						<li>
+							<a class="ttc1" href="#c5.1.1">5.1.1. Bảo mật dữ liệu khi truyền trên mạng công cộng</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.1.2">5.1.2. Hỗ trợ làm việc từ xa và truy cập tài nguyên nội bộ</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.1.3">5.1.3. Ẩn IP công khai trước website hoặc dịch vụ đích</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.1.4">5.1.4. Giảm rủi ro khi nhân viên phải truy cập từ nhiều nơi khác nhau</a>
+						</li>
+					</ul>
+                </li>
+                <li>
+                    <a class="ttc1" href="#c5.2">5.2. Nhược điểm của VPN</a>
+					<ul>
+						<li>
+							<a class="ttc1" href="#c5.2.1">5.2.1. VPN không phải “lá chắn vạn năng”</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.2.2">5.2.2. Nếu lộ tài khoản VPN thì hậu quả có thể rất lớn</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.2.3">5.2.3. Có thể làm chậm mạng và giảm hiệu năng</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.2.4">5.2.4. Tăng gánh nặng quản trị hệ thống</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.2.5">5.2.5. Thiết bị hoặc cổng VPN thường là mục tiêu tấn công hấp dẫn</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c5.2.6">5.2.6. VPN không còn là giải pháp tối ưu duy nhất trong thời đại cloud</a>
+						</li>
+					</ul>
+                </li>
+				<li>
+					 <a class="ttc1" href="#c5.3">5.3. Bản chất của ưu và nhược điểm nằm ở đâu?</a>
+				</li>
+            </ul>
+		</td>
+		<!--mục lục-->
+		<td rowspan="2" valign="top"  style="padding-left: 10px">
+            <h1 class="ttc" align="center">MỤC LỤC</h1>
+            <table width="100%" border="0" cellspacing="5" cellpadding="10">
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PMD.html">Phần mở đầu</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2"  href="KTHP_C1.html">Chương 1: Khái niệm VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C2.html">Chương 2: Thành phần của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">  
+                    <td><a class="ttc2" href="KTHP_C3.html">Chương 3: Nguyên lý hoạt động của VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C4.html">Chương 4: Các dạng kết nối của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C5.html">Chương 5: Ưu, Nhược điểm của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C6.html">Chương 6: Ứng dụng của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PKL.html">Phần kết luận</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_dgtv.html">Đánh giá thành viên</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_tltk.html">Tài liệu tham khảo</a></td>
+                </tr>
+            </table>
+		</td> 
+		</tr>
+		<tr valign="top" >
+		<td  bgcolor="#F9F9F9" class="nd">
+                <h3 class="ttc" id="c5.1">5.1. Ưu điểm của VPN</h3>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.1.1">5.1.1. Bảo mật dữ liệu khi truyền trên mạng công cộng</li>
+					</ul>
+					<ul>
+						<li>
+							VPN tạo ra một “đường hầm mã hóa” giữa thiết bị người dùng và điểm cuối VPN. Về mặt kỹ thuật, điều này giúp giảm rủi ro người khác trên cùng mạng đọc lén dữ liệu đang truyền,
+							đặc biệt khi dùng Wi-Fi công cộng hoặc các mạng không đáng tin cậy. Trong hướng dẫn của NIST về remote access, VPN là một trong các công nghệ cốt lõi để hỗ trợ truy cập từ xa an toàn.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Sinh viên ngồi ở quán cà phê, đăng nhập email trường hoặc Internet Banking bằng Wi-Fi miễn phí. Nếu không có lớp bảo vệ phù hợp, dữ liệu có nguy cơ bị nghe lén cao hơn. 
+							Khi bật VPN, dữ liệu từ máy bạn đến máy chủ VPN được mã hóa, nên người lạ trong cùng mạng khó nhìn thấy nội dung truyền đi hơn.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.1.2">5.1.2. Hỗ trợ làm việc từ xa và truy cập tài nguyên nội bộ</li>
+					</ul>
+					<ul>
+						<li>
+							VPN rất quan trọng trong doanh nghiệp vì nó cho phép nhân viên ở ngoài văn phòng truy cập vào mạng nội bộ, hệ thống kế toán, ERP, file server, phần mềm nội bộ hoặc cơ sở dữ liệu của công ty.
+							Đây là lý do VPN gắn liền với khái niệm remote access security. NIST xem remote access là nhu cầu rất phổ biến trong telework và VPN là một cơ chế thực thi điển hình.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Một kế toán làm ở nhà nhưng vẫn cần vào phần mềm kế toán nội bộ của công ty để xuất báo cáo công nợ hoặc kiểm tra chứng từ. Nếu công ty triển khai VPN, nhân viên có thể kết nối từ xa vào hệ thống đó như đang ở văn phòng.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.1.3">5.1.3. Ẩn IP công khai trước website hoặc dịch vụ đích</li>
+					</ul>
+					<ul>
+						<li>
+							Khi dùng VPN thương mại, địa chỉ IP mà website nhìn thấy thường là IP của máy chủ VPN, không phải IP thật của người dùng. Điều này giúp <b>tăng mức riêng tư ở lớp mạng</b>, vì website không thấy trực tiếp địa chỉ IP nhà bạn. 
+							Tuy nhiên, đây chỉ là che giấu ở mức mạng, không phải ẩn danh hoàn toàn.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Bạn truy cập một trang web, bình thường trang đó thấy IP Việt Nam của nhà mạng bạn. Nếu bạn bật VPN, nó có thể chỉ thấy IP của máy chủ VPN ở Singapore hoặc Nhật.
+							Nhưng nếu bạn vẫn đăng nhập tài khoản Google/Facebook của mình thì website vẫn biết đó là bạn.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.1.4">5.1.4. Giảm rủi ro khi nhân viên phải truy cập từ nhiều nơi khác nhau</li>
+					</ul>
+					<ul>
+						<li>
+							Trong môi trường quản trị hệ thống, VPN giúp doanh nghiệp có một điểm kiểm soát tập trung cho truy cập từ xa. Thay vì để người dùng kết nối trực tiếp lung tung vào tài nguyên nội bộ,
+							tổ chức có thể buộc mọi truy cập đi qua hạ tầng VPN để áp dụng xác thực, logging, chính sách truy cập và giám sát.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Một công ty có nhân viên ở Cần Thơ, TP.HCM, Hà Nội cùng truy cập phần mềm nội bộ. Nếu không có cơ chế tập trung, mỗi hệ thống lại mở ra Internet riêng thì rủi ro sẽ cao hơn. Dùng VPN giúp gom truy cập về một cổng kiểm soát thống nhất hơn.
+						</li>
+					</ul>
+					<!-->
+				<h3 class="ttc" id="c5.2">5.2. Nhược điểm của VPN</h3>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.1">5.2.1. VPN không phải “lá chắn vạn năng”</li>
+					</ul>
+					<ul>
+						<li>
+							VPN chỉ bảo vệ đường truyền, chứ không tự động bảo vệ toàn bộ hệ thống. Nó không thay thế chống malware, không ngăn người dùng bấm vào link phishing, không vá lỗ hổng máy tính, và không tự sửa cấu hình yếu trên thiết bị đầu cuối. 
+							NIST nhấn mạnh rằng remote access security không chỉ là VPN, mà còn cần bảo mật thiết bị, phần mềm, xác thực và quy trình quản trị.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Bạn bật VPN rồi nhưng vẫn bấm vào email giả mạo ngân hàng và nhập mật khẩu vào web giả. Khi đó bạn vẫn bị lộ tài khoản như thường. VPN không cứu được lỗi này vì vấn đề nằm ở lừa đảo người dùng, không phải ở đường truyền.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.2">5.2.2. Nếu lộ tài khoản VPN thì hậu quả có thể rất lớn</li>
+					</ul>
+					<ul>
+						<li>
+							Một điểm yếu quan trọng của VPN truyền thống là nó thường vận hành theo tư duy “đã vào được mạng thì được tin tương đối nhiều”. NIST về Zero Trust giải thích rằng mô hình bảo mật dựa mạnh vào chu vi mạng không còn đủ tốt trong môi trường hiện đại,
+							vì kẻ tấn công khi đã có chỗ đứng bên trong có thể di chuyển ngang sang các tài nguyên khác.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Một nhân viên bị lộ username và password VPN do dùng lại mật khẩu cũ. Hacker đăng nhập VPN thành công, rồi từ đó dò tiếp sang máy chủ file, ứng dụng nội bộ hoặc hệ thống kế toán. Tức là điểm yếu không chỉ nằm ở “mất một tài khoản”, mà có thể mở cửa vào cả mạng doanh nghiệp.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.3">5.2.3. Có thể làm chậm mạng và giảm hiệu năng</li>
+					</ul>
+					<ul>
+						<li>
+							VPN làm dữ liệu phải đi thêm một chặng qua máy chủ VPN, lại còn phải mã hóa/giải mã nên thường làm tăng latency và giảm throughput. Microsoft nói rõ rằng khi ép toàn bộ lưu lượng đi qua VPN theo kiểu forced tunnel,
+							hạ tầng VPN có thể bị quá tải, làm giảm hiệu năng cho các dịch vụ như Teams, SharePoint, Exchange Online; vì vậy họ khuyến nghị split tunneling cho một số luồng phù hợp.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Nhân viên họp Teams ở nhà mà công ty bắt mọi lưu lượng phải đi qua VPN trung tâm. Kết quả là gọi video giật lag, tiếng đứt quãng, file tải chậm. Đây là ví dụ rất điển hình của việc VPN tăng bảo mật ở một mặt nhưng lại đánh đổi hiệu năng ở mặt khác.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.4">5.2.4. Tăng gánh nặng quản trị hệ thống</li>
+					</ul>
+					<ul>
+						<li>
+							Muốn VPN chạy ổn thì doanh nghiệp phải quản lý rất nhiều thứ: cấu hình máy chủ, phần mềm client, chứng chỉ số, xác thực đa yếu tố, logging, dung lượng đường truyền, chính sách truy cập, cập nhật bản vá. Nghĩa là VPN không chỉ là công cụ kỹ thuật mà còn là bài toán vận hành.
+							NIST xem việc bảo vệ remote access server và remote access client là một phần quan trọng trong quản trị an ninh.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Một công ty nhỏ mua thiết bị VPN nhưng không có đội IT đủ mạnh. Sau vài tháng, client lỗi thời, chứng chỉ gần hết hạn, tài khoản cũ không thu hồi, log không ai xem. Lúc đó VPN từ “công cụ bảo vệ” lại thành “điểm yếu bị bỏ quên”.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.5">5.2.5. Thiết bị hoặc cổng VPN thường là mục tiêu tấn công hấp dẫn</li>
+					</ul>
+					<ul>
+						<li>
+							Do VPN là cổng vào từ Internet đến mạng nội bộ nên nó là mục tiêu rất đáng giá đối với hacker. CISA cảnh báo rằng các dịch vụ remote access như VPN thường bị khai thác khi thiếu kiểm soát đủ mạnh để ngăn truy cập trái phép.
+							Những yếu tố như mật khẩu yếu, thiếu MFA, cấu hình sai, hoặc chậm vá lỗ hổng đều làm rủi ro tăng mạnh.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Công ty bật VPN nhưng không dùng MFA. Một tài khoản bị lộ qua phishing là hacker vào được ngay. Hoặc thiết bị VPN có lỗ hổng nhưng công ty vá chậm, hacker có thể khai thác trực tiếp từ Internet.
+							Đây là kiểu rủi ro rất thực tế chứ không phải lý thuyết suông.
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c5.2.6">5.2.6. VPN không còn là giải pháp tối ưu duy nhất trong thời đại cloud</li>
+					</ul>
+					<ul>
+						<li>
+							NIST về Zero Trust cho thấy mô hình “tin cậy người ở trong mạng hơn người ở ngoài mạng” ngày càng không phù hợp, vì doanh nghiệp hiện nay dùng cloud, SaaS, làm việc lai, thiết bị cá nhân, ứng dụng phân tán. Do đó, VPN vẫn hữu ích nhưng không phải lúc nào cũng là giải pháp trung tâm tốt nhất;
+							nhiều tổ chức đang chuyển dần sang tư duy <b>Zero Trust</b>, kiểm tra danh tính và quyền truy cập ở từng phiên, từng tài nguyên thay vì chỉ kiểm tra ở cổng vào mạng.
+						</li>
+						<li>
+							<b>Ví dụ thực tế:</b> Ngày xưa muốn vào phần mềm kế toán nội bộ thì phải vào mạng công ty trước, nên VPN rất hợp. Nhưng nếu giờ công ty dùng toàn dịch vụ cloud như Microsoft 365, Google Workspace, phần mềm kế toán SaaS, thì việc bắt mọi thứ chạy qua VPN có thể làm chậm hơn mà không tăng bảo mật tương xứng.
+						</li>
+					</ul>					
+					<!-->
+				<h3 class="ttc" id="c5.3">5.3. Bản chất của ưu và nhược điểm nằm ở đâu?</h3>
+					<p> Nói theo kiểu chuyên môn,<b> ưu điểm của VPN</b> chủ yếu nằm ở việc nó tăng confidentiality in transit — tức là tăng tính bí mật của dữ liệu khi đang truyền trên mạng — và hỗ trợ secure remote access. 
+					<br><br><b>Còn nhược điểm</b> nằm ở chỗ nó không giải quyết hết ba bài toán lớn còn lại: endpoint security (bảo mật máy người dùng), identity security (bảo mật danh tính/tài khoản), và least privilege access (chỉ cấp đúng quyền cần thiết). 
+					<br><br>Vì vậy, VPN mạnh ở lớp truyền thông và kết nối, nhưng chưa đủ nếu đứng một mình.
+					</p>
+			</tr>
+		</table>
+</div>
+</body>
+</html>

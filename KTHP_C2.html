@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chương 2: Thành phần của VPN</title>
+	<link rel="stylesheet" href="KTHP_cacchuong.css">
+</head>
+
+<body>
+	<table cellspacing="15" align="center">
+		<tr>
+			<td>
+				<a class="menu" href="index.html">TRANG CHỦ</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_dgtv.html">BẢNG ĐÁNH GIÁ THÀNH VIÊN</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_tltk.html">TÀI LIỆU THAM KHẢO</a>
+			</td>
+		</tr>
+	</table>
+<div class="bg">
+	<hr noshade size="2" color="#696969" align="center" width="100%" style=" margin-top:0px; ">
+	<br> 
+    <!--header-->
+	 <h1 class="title" align="center">CHƯƠNG 2: THÀNH PHẦN CỦA VPN</h1>
+	<br>
+	<!--ndung-->
+	<table width="95%" border=0 cellspacing="10" style=" margin-left: 40px;">
+        <tr>
+		<!--menu-->
+        <td width="75%" background="img/hn2.jpg">
+            <ul  style="list-style-type: none;" >
+                <li>
+                    <a class="ttc1" href="#c2.1">2.1. VPN Client</a>
+                </li>
+                <li>
+                    <a class="ttc1" href="#c2.2">2.2. VPN Sever</a>
+                </li>
+				<li>
+                    <a class="ttc1" href="#c2.3">2.3. VPN Tunnel</a>
+                </li>
+				 <li>
+                    <a class="ttc1" href="#c2.4">2.4. Các giao thức VPN thường dùng</a>
+                </li>
+            </ul>
+		</td>
+		<!--mục lục-->
+		<td rowspan="2" valign="top"  style="padding-left: 10px">
+            <h1 class="ttc" align="center">MỤC LỤC</h1>
+            <table width="100%" border="0" cellspacing="5" cellpadding="10">
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PMD.html">Phần mở đầu</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2"  href="KTHP_C1.html">Chương 1: Khái niệm VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C2.html">Chương 2: Thành phần của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">  
+                    <td><a class="ttc2" href="KTHP_C3.html">Chương 3: Nguyên lý hoạt động của VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C4.html">Chương 4: Các dạng kết nối của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C5.html">Chương 5: Ưu, Nhược điểm của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C6.html">Chương 6: Ứng dụng của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PKL.html">Phần kết luận</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_dgtv.html">Đánh giá thành viên</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_tltk.html">Tài liệu tham khảo</a></td>
+                </tr>
+            </table>
+		</td> 
+		</tr>
+		<tr valign="top" >
+		<td  bgcolor="#F9F9F9" class="nd">
+		
+				<p>Mạng riêng ảo (VPN - Virtual Private Network) là một giải pháp công nghệ tạo ra kết nối bảo mật trên nền tảng mạng công cộng (Internet).
+				Để một hệ thống VPN vận hành ổn định và an toàn, kiến trúc của nó phải bao gồm 4 thành phần nền tảng sau:
+				</p>
+				
+                <h3 class="ttc" id="c2.1">2.1. VPN Client</h3>
+					<p>VPN Client là thực thể khởi tạo kết nối. Trong lý thuyết dịch vụ mạng, Client không chỉ đơn thuần là một ứng dụng, 
+					mà là một Endpoint thực hiện các tiến trình xử lý dữ liệu tại nguồn.
+					</p>
+					<p> <b>Thiết lập Virtual Network Interface:</b> Client tạo ra một card mạng ảo trên máy tính hoặc điện thoại.
+					Khi kết nối, hệ điều hành sẽ ưu tiên đẩy dữ liệu qua card ảo này thay vì card mạng vật lý thông thường.
+					</p>
+
+					<p> <b>Cơ chế mã hóa tại nguồn:</b> Trước khi gói tin rời khỏi thiết bị để đi vào Internet,
+					Client sử dụng các thuật toán (như AES) để mã hóa toàn bộ nội dung. Điều này đảm bảo dữ liệu "vô hình" ngay cả khi đi qua Wi-Fi công cộng.
+					</p>
+
+					<p> <b>Xử lý Logic định tuyến:</b> Nó quyết định lưu lượng nào cần đi qua VPN (để bảo mật) và lưu lượng nào có thể đi thẳng ra Internet thông thường nhằm tối ưu tốc độ.
+					</p>
+
+                <h3 class="ttc" id="c2.2">2.2. VPN Sever</h3>
+					<p>VPN Server vừa đóng vai trò là điểm hội tụ (Concentrator) các kết nối VPN vừa là "người gác cổng" cho tài nguyên mạng nội bộ.
+					</p> 
+					
+					<p><b>Xác thực AAA (Authentication, Authorization, Accounting):</b><br>
+					Trong hệ thống VPN, người dùng không thể truy cập tự do mà phải trải qua quá trình kiểm tra nghiêm ngặt. Đầu tiên, hệ thống xác thực danh tính thông qua tài khoản/mật khẩu,
+					mã OTP hoặc chứng chỉ số để đảm bảo đúng người. Sau đó, hệ thống phân quyền, tức là mỗi người chỉ được truy cập vào những tài nguyên phù hợp với vai trò của mình (ví dụ: kế toán chỉ vào phần mềm tài chính, không xem được dữ liệu nhân sự). 
+					Cuối cùng, toàn bộ hoạt động đăng nhập và truy cập đều được ghi lại để phục vụ quản lý và kiểm tra. Ví dụ, một nhân viên làm việc từ xa phải đăng nhập VPN bằng tài khoản công ty, nếu thông tin không hợp lệ thì sẽ bị từ chối ngay.
+					</p> 
+					
+					<p><b>Giải mã và Termination:</b><br>
+					Khi dữ liệu được truyền qua VPN, chúng luôn được mã hóa để đảm bảo an toàn trên môi trường Internet công cộng.
+					Khi đến VPN server, hệ thống sẽ thực hiện quá trình giải mã để khôi phục dữ liệu về dạng ban đầu và xử lý yêu cầu của người dùng. Quá trình này được gọi là “termination”, tức là điểm kết thúc của “đường hầm” VPN. 
+					Ví dụ, khi gửi yêu cầu mở một file báo cáo từ máy ở nhà, dữ liệu đó sẽ được mã hóa trong suốt quá trình truyền đi và chỉ được giải mã khi đến server công ty, giúp đảm bảo không ai bên ngoài có thể đọc được nội dung.
+					</p>
+					
+					<p><b>Cấp phát tài nguyên nội bộ:</b><br>
+					Sau khi xác thực thành công, VPN server sẽ cấp cho người dùng một địa chỉ IP nội bộ và cho phép truy cập vào các tài nguyên trong mạng công ty như đang làm việc trực tiếp tại văn phòng. 
+					Nhờ đó, người dùng có thể sử dụng các hệ thống như server cơ sở dữ liệu, phần mềm quản lý kho hoặc các file nội bộ mà không cần có mặt tại công ty.
+					Ví dụ, một nhân viên làm việc tại nhà vẫn có thể truy cập hệ thống quản lý đơn hàng hoặc dữ liệu khách hàng như khi đang ngồi trong mạng nội bộ của doanh nghiệp.
+					</p>
+
+                <h3 class="ttc" id="c2.3">2.3. VPN Tunnel</h3>
+					<p>“Đường hầm” là khái niệm trừu tượng mô tả quá trình truyền tải dữ liệu an toàn qua môi trường mạng không tin cậy.
+					</p>
+
+					<p><b>Kỹ thuật Đóng gói (Encapsulation):</b> Đây là kỹ thuật cốt lõi. Gói tin gốc (Payload) với địa chỉ IP nội bộ sẽ được bao bọc bên trong một lớp Header mới (thường là IP công cộng). 
+					Nhờ đó, gói tin có thể di chuyển qua các Router trên Internet mà không lộ ra cấu trúc mạng nội bộ bên trong.
+					</p>
+					
+					<p><b>Cơ chế bảo mật:</b> Khi dữ liệu đi qua “đường hầm” VPN, nó sẽ được bảo vệ bởi nhiều lớp an ninh nhằm tránh bị đọc lén, sửa đổi hoặc giả mạo. 
+					Ba yếu tố cốt lõi đảm bảo an toàn cho dữ liệu gồm tính bí mật, tính toàn vẹn và xác thực nguồn gốc. Nhờ đó, dù truyền qua Internet công cộng, dữ liệu vẫn được bảo vệ như đang ở trong mạng nội bộ riêng.
+					</p>
+					 <ul>
+						<li>
+							<b>Tính bí mật (Confidentiality):</b> Đảm bảo chỉ người gửi và người nhận hợp lệ mới đọc được nội dung dữ liệu. VPN thực hiện điều này bằng cách mã hóa dữ liệu trước khi gửi đi. 
+							Khi dữ liệu đã mã hóa, nếu bị chặn giữa đường thì kẻ tấn công cũng chỉ thấy được những ký tự vô nghĩa, không thể hiểu nội dung. 
+							<br>Ví dụ, khi nhân viên đăng nhập vào hệ thống công ty từ quán cà phê có WiFi công cộng, thông tin tài khoản của nhân viên vẫn được bảo vệ vì đã được mã hóa.
+						</li>
+						<li>
+							<b>Tính toàn vẹn (Integrity):</b> Tính toàn vẹn đảm bảo dữ liệu khi gửi đi và khi nhận về phải giống hệt nhau, không bị thay đổi dù chỉ một ký tự. Trong VPN, điều này được thực hiện bằng cách tạo ra một dấu kiểm tra
+							đi kèm dữ liệu. Khi dữ liệu đến nơi, hệ thống sẽ tính lại và so sánh với dấu ban đầu. Nếu có bất kỳ sai lệch nào, hệ thống sẽ phát hiện và từ chối dữ liệu đó. 
+							<br>Ví dụ, nếu người dùng gửi file báo cáo và bị hacker chèn sửa số liệu trên đường truyền, hệ thống sẽ nhận ra file đã bị thay đổi và không chấp nhận file đó.
+						</li>
+						<li>
+							<b>Xác thực nguồn gốc (Origin Authentication):</b> Xác thực nguồn gốc đảm bảo dữ liệu đến đúng từ người gửi hợp lệ, không phải kẻ giả mạo. 
+							VPN thực hiện điều này bằng các cơ chế như khóa bí mật dùng chung, chữ ký số hoặc chứng chỉ số. Nhờ đó, bên nhận có thể kiểm tra xem dữ liệu có thực sự do server hoặc client hợp lệ gửi hay không. 
+							<br>Ví dụ, khi nhân viên nhận dữ liệu từ server công ty, hệ thống sẽ kiểm tra “chữ ký” của server; nếu không đúng, dữ liệu sẽ bị coi là giả mạo và bị chặn lại.
+						</li>
+					</ul>
+					
+                <h3 class="ttc" id="c2.4">2.4. Các giao thức VPN thường dùng</h3>
+					<p>Giao thức là bộ quy tắc chuẩn hóa cách thức mã hóa và truyền tải trong “đường hầm”. Các giao thức theo tầng (Layer) trong mô hình OSI:
+					</p> 
+					
+					<ul>
+						<li>
+							<b>IPsec (Internet Protocol Security):</b>IPsec là giao thức VPN hoạt động ở tầng mạng (Layer 3), được đánh giá là mạnh mẽ và an toàn nhất hiện nay. 
+							Nó có khả năng mã hóa toàn bộ gói tin IP và tạo ra một “đường hầm” bảo mật giữa hai điểm kết nối. IPsec thường được sử dụng trong mô hình Site-to-Site, 
+							nghĩa là kết nối hai mạng nội bộ của hai chi nhánh công ty với nhau qua Internet nhưng vẫn đảm bảo an toàn như mạng riêng. 
+							Giao thức này bao gồm hai thành phần chính là AH (Authentication Header) dùng để đảm bảo tính toàn vẹn và xác thực dữ liệu, và ESP (Encapsulating Security Payload) dùng để mã hóa và bảo vệ nội dung dữ liệu. 
+							Nhờ đó, dữ liệu được bảo vệ toàn diện cả về nội dung lẫn nguồn gốc.
+						</li>
+						<li>
+							<b>SSL/TLS (Secure Sockets Layer / Transport Layer Security):</b> SSL/TLS VPN hoạt động ở tầng ứng dụng (Layer 7) và nổi bật với tính linh hoạt cao. 
+							Điểm mạnh của giao thức này là cho phép người dùng truy cập tài nguyên nội bộ thông qua trình duyệt web mà không cần cài đặt phần mềm VPN riêng biệt.
+							 Nó rất tiện lợi cho nhân viên làm việc từ xa hoặc sử dụng thiết bị cá nhân. SSL/TLS thường được sử dụng trong các hệ thống truy cập web bảo mật (HTTPS), 
+							 vì vậy người dùng chỉ cần truy cập một địa chỉ web, đăng nhập và sử dụng tài nguyên như bình thường. Tuy nhiên, trong một số trường hợp phức tạp, mức độ kiểm soát và bảo mật của nó có thể không mạnh bằng IPsec.
+
+						</li>
+						<li>
+							<b>L2TP (Layer 2 Tunneling Protocol):</b> L2TP là giao thức hoạt động ở tầng liên kết dữ liệu (Layer 2), có chức năng chính là tạo “đường hầm” để truyền dữ liệu giữa hai điểm. 
+							Tuy nhiên, bản thân L2TP không có cơ chế mã hóa mạnh, vì vậy nó thường được kết hợp với IPsec để tạo thành L2TP/IPsec nhằm đảm bảo cả khả năng tạo “đường hầm” và bảo mật dữ liệu. Giao thức này được hỗ trợ sẵn trên nhiều hệ điều hành như Windows, 
+							nên khá phổ biến trong các kết nối VPN cá nhân hoặc doanh nghiệp nhỏ. Khi sử dụng L2TP/IPsec, L2TP chịu trách nhiệm tạo tunnel, còn IPsec đảm nhiệm việc mã hóa và bảo vệ dữ liệu.
+						</li>
+						<li>
+							<b>PPTP (Point-to-Point Tunneling Protocol):</b> PPTP là một trong những giao thức VPN lâu đời, hoạt động ở tầng liên kết dữ liệu (Layer 2).
+							Ưu điểm của PPTP là tốc độ cao và dễ cấu hình, tuy nhiên nhược điểm là bảo mật rất yếu. Các phương thức mã hóa của PPTP đã lỗi thời và dễ bị tấn công, đặc biệt là các hình thức brute-force để dò mật khẩu. 
+							Vì vậy, hiện nay PPTP gần như không còn được khuyến nghị sử dụng trong các hệ thống yêu cầu bảo mật cao. Nó chỉ còn mang tính chất tham khảo hoặc dùng trong các môi trường không quan trọng về bảo mật.
+						</li>
+					</ul>
+
+		</td>
+		</tr>
+		</table>
+</div>
+</body>
+</html>

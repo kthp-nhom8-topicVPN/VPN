@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chương 6: Ứng dụng của VPN trong thực tế</title>
+	<link rel="stylesheet" href="KTHP_cacchuong.css">
+</head>
+
+<body>
+	<table cellspacing="15" align="center" >
+		<tr>
+			<td>
+				<a class="menu" href="index.html">TRANG CHỦ</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_dgtv.html">BẢNG ĐÁNH GIÁ THÀNH VIÊN</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_tltk.html">TÀI LIỆU THAM KHẢO</a>
+			</td>
+		</tr>
+	</table>
+<div class="bg">
+	<hr noshade size="2" color="#696969" align="center" width="100%" style=" margin-top:0px; ">
+	<br> 
+    <!--header-->
+	 <h1 class="title" align="center">CHƯƠNG 6: ỨNG DỤNG CỦA VPN TRONG THỰC TẾ</h1>
+	<br>
+	<!--ndung-->
+	<table width="95%" border=0 cellspacing="10" style=" margin-left: 40px;">
+        <tr>
+		<!--menu-->
+        <td width="75%" background="img/hn2.jpg">
+            <ul  style="list-style-type: none;" >
+                <li>
+                    <a class="ttc1" href="#c6.1">6.1. Ứng dụng của VPN trong thực tế</a>
+                </li>
+                <li>
+                    <a class="ttc1" href="#c6.2">6.2. Các phần mềm VPN nổi bật</a>
+					<ul>
+						<li>
+							<a class="ttc1" href="#c6.2.1">6.2.1. Các phần mềm VPN quốc tế</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c6.2.2">6.2.2. Phần mềm/giải pháp VPN tại Việt Nam</a>
+						</li>
+					</ul>
+                </li>
+				<li>
+					 <a class="ttc1" href="#c6.3">6.3. So sánh VPN với các công nghệ khác</a>
+				</li>
+            </ul>
+		</td>
+		<!--mục lục-->
+		<td rowspan="2" valign="top"  style="padding-left: 10px;">
+            <h1 class="ttc" align="center">MỤC LỤC</h1>
+            <table width="100%" border="0" cellspacing="5" cellpadding="10">
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PMD.html">Phần mở đầu</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2"  href="KTHP_C1.html">Chương 1: Khái niệm VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C2.html">Chương 2: Thành phần của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">  
+                    <td><a class="ttc2" href="KTHP_C3.html">Chương 3: Nguyên lý hoạt động của VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C4.html">Chương 4: Các dạng kết nối của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C5.html">Chương 5: Ưu, Nhược điểm của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C6.html">Chương 6: Ứng dụng của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PKL.html">Phần kết luận</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_dgtv.html">Đánh giá thành viên</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_tltk.html">Tài liệu tham khảo</a></td>
+                </tr>
+            </table>
+		</td> 
+		</tr>
+		<tr valign="top" >
+		<td  bgcolor="#F9F9F9" class="nd">
+                <h3 class="ttc" id="c6.1">6.1. Ứng dụng của VPN trong thực tế</h3>
+				<p> VPN (Virtual Private Network) được ứng dụng rộng rãi trong nhiều lĩnh vực của đời sống và công việc nhờ khả năng bảo mật dữ liệu, ẩn danh và kết nối từ xa an toàn.
+				</p>
+					<ul>
+						<li>
+							Làm việc từ xa trong doanh nghiệp: VPN cho phép nhân viên truy cập vào hệ thống nội bộ của công ty từ xa thông qua Internet.
+						</li>
+						<li>
+							Truy cập tài nguyên bị giới hạn địa lý: VPN giúp người dùng thay đổi địa chỉ IP sang quốc gia khác, từ đó truy cập được các website hoặc dịch vụ bị giới hạn theo khu vực.
+						</li>
+						<li>
+							Kết nối giữa các chi nhánh doanh nghiệp: VPN được sử dụng để liên kết các chi nhánh của một doanh nghiệp thành một hệ thống mạng thống nhất.
+						</li>
+						<li>
+							Ứng dụng trong công nghệ và phát triển phần mềm: Trong lĩnh vực IT, VPN hỗ trợ lập trình viên và kỹ sư truy cập vào server nội bộ, môi trường test hoặc hệ thống dữ liệu từ xa.
+						</li>
+						<li>
+							Bảo vệ giao dịch thương mại điện tử và tài chính: VPN giúp mã hóa dữ liệu khi thực hiện các giao dịch trực tuyến, đặc biệt trong thương mại điện tử và ngân hàng.
+						</li>
+					</ul>
+				<h3 class="ttc" id="c6.2">6.2. Các phần mềm VPN nổi bật</h3>
+				<p> Hiện nay có nhiều phần mềm VPN được sử dụng phổ biến trên thế giới và cả tại Việt Nam, phục vụ nhu cầu bảo mật và kết nối an toàn.
+				</p>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c6.2.1">6.2.1. Các phần mềm VPN quốc tế</li>
+					</ul>
+					<ul>
+						<li>
+							NordVPN: Phổ biến nhờ tốc độ nhanh, bảo mật cao, dễ sử dụng cho cá nhân.
+						</li>
+						<li>
+							ExpressVPN: Tốc độ ổn định, phù hợp xem nội dung quốc tế và làm việc từ xa.
+						</li>
+						<li>
+							ProtonVPN: Chú trọng quyền riêng tư, có phiên bản miễn phí.
+						</li>
+						<li>
+							OpenVPN: Mã nguồn mở, thường dùng trong doanh nghiệp để tự triển khai hệ thống VPN riêng.
+						</li>
+						<li>
+							WireGuard: Giao thức VPN mới, nhẹ, nhanh và bảo mật cao.
+						</li>
+						<li>
+							Cisco AnyConnect: Thường dùng trong doanh nghiệp lớn để truy cập hệ thống nội bộ.
+						</li>
+					</ul>	
+					<!-->
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c6.2.2">6.2.2. Phần mềm/giải pháp VPN tại Việt Nam</li>
+					</ul>
+					<ul>
+						<li>
+							Viettel VPN (Viettel Enterprise VPN): Giải pháp VPN cho doanh nghiệp, giúp kết nối an toàn giữa các chi nhánh và nhân viên từ xa.
+						</li>
+						<li>
+							VNPT VPN: Dịch vụ mạng riêng ảo của VNPT, hỗ trợ doanh nghiệp xây dựng hệ thống kết nối nội bộ an toàn.
+						</li>
+						<li>
+							FPT VPN / FPT Telecom Enterprise: Cung cấp giải pháp VPN cho doanh nghiệp trong hệ sinh thái FPT.
+						</li>
+					</ul>
+					
+				<h3 class="ttc" id="c6.3">6.3. So sánh VPN với các công nghệ khác</h3>	
+				<table width="80%" border="1" cellpadding="5" cellspacing="0" valign="middle" align="center">
+					<tr align="center" bgcolor=" #000556" style="color: white; font-weight:bold">
+						<td>Tiêu chí</td>
+						<td>VPN </td>
+						<td>Proxy</td>
+						<td>Firewall</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Chức năng chính</b></td>
+						<td width="27%">Tạo kết nối an toàn, mã hóa dữ liệu</td>
+						<td width="27%">Trung gian truy cập Internet</td>
+						<td width="27%">Kết nối các mạng nội bộ giữa các văn phòng, chi nhánh</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Mức độ bảo mật</b></td>
+						<td width="27%">Cao (có mã hóa toàn bộ dữ liệu)</td>
+						<td width="27%">Thấp - trung bình (thường không mã hóa)</td>
+						<td width="27%">Cao trong nội bộ hệ thống</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Phạm vi hoạt động</b></td>
+						<td width="27%">Toàn bộ thiết bị và mọi ứng dụng</td>
+						<td width="27%">Chỉ áp dụng cho ứng dụng/trình duyệt được cấu hình</td>
+						<td width="27%">Hoạt động trong mạng nội bộ hoặc gateway</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Khả năng ẩn IP</b></td>
+						<td width="27%">Có</td>
+						<td width="27%">Có</td>
+						<td width="27%">Không trực tiếp</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Mục đích sử dụng</b></td>
+						<td width="27%">Bảo mật, làm việc từ xa, kết nối mạng nội bộ</td>
+						<td width="27%">Truy cập web nhanh, vượt giới hạn đơn giản</td>
+						<td width="27%">Ngăn chặn truy cập trái phép, bảo vệ hệ thống</td>
+					</tr>
+					<tr>
+						<td width="19%"><b>Mã hóa dữ liệu</b></td>
+						<td width="27%">Có (AES, TLS,…)</td>
+						<td width="27%">Không hoặc rất hạn chế</td>
+						<td width="27%">Không mã hóa (chỉ lọc traffic)</td>
+					</tr>
+					
+				</table>
+			</tr>	
+		</table>
+</div>
+</body>
+</html>

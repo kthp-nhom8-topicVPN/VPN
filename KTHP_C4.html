@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chương 4: Các loại VPN</title>
+	<link rel="stylesheet" href="KTHP_cacchuong.css">
+</head>
+
+<body>
+	<table cellspacing="15" align="center">
+		<tr>
+			<td>
+				<a class="menu" href="index.html">TRANG CHỦ</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_dgtv.html">BẢNG ĐÁNH GIÁ THÀNH VIÊN</a>
+			</td>
+			<td>
+				<a class="menu" href="KTHP_tltk.html">TÀI LIỆU THAM KHẢO</a>
+			</td>
+		</tr>
+	</table>
+<div class="bg">
+	<hr noshade size="2" color="#696969" align="center" width="100%" style=" margin-top:0px; ">
+	<br> 
+    <!--header-->
+	 <h1 class="title" align="center">CHƯƠNG 4: CÁC LOẠI VPN</h1>
+	<br>
+	<!--ndung-->
+	<table width="95%" border=0 cellspacing="10" style=" margin-left: 40px;">
+        <tr>
+		<!--menu-->
+        <td width="75%" background="img/hn2.jpg">
+            <ul  style="list-style-type: none;" >
+                <li>
+                    <a class="ttc1" href="#c4.1">4.1. Remote Access VPN (Client-to-Site VPN)</a>
+					<ul>
+						<li>
+							<a class="ttc1" href="#c4.1.1">4.1.1. Đặc điểm</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c4.1.2">4.1.2. Mục đích</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c4.1.3">4.1.3. Ví dụ vận dụng thực tế</a>
+						</li>
+					</ul>
+                </li>
+                <li>
+                    <a class="ttc1" href="#c4.2">4.2. Site to Site VPN</a>
+					<ul>
+						<li>
+							<a class="ttc1" href="#c4.2.1">4.2.1. Đặc điểm</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c4.2.2">4.2.2. Mục đích</a>
+						</li>
+						<li>
+							<a class="ttc1" href="#c4.2.3">4.2.3. Ví dụ vận dụng thực tế</a>
+						</li>
+					</ul>
+                </li>
+				<li>
+					 <a class="ttc1" href="#c4.3">4.3. So sánh sự khác nhau giữa mô hình VPN Site to Site và VPN Client to Site</a>
+				</li>
+            </ul>
+		</td>
+		<!--mục lục-->
+		<td rowspan="2" valign="top"  style="padding-left: 10px">
+            <h1 class="ttc" align="center">MỤC LỤC</h1>
+            <table width="100%" border="0" cellspacing="5" cellpadding="10">
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PMD.html">Phần mở đầu</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2"  href="KTHP_C1.html">Chương 1: Khái niệm VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C2.html">Chương 2: Thành phần của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">  
+                    <td><a class="ttc2" href="KTHP_C3.html">Chương 3: Nguyên lý hoạt động của VPN</a></td>
+                </tr>
+                <tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C4.html">Chương 4: Các dạng kết nối của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C5.html">Chương 5: Ưu, Nhược điểm của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_C6.html">Chương 6: Ứng dụng của VPN</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_PKL.html">Phần kết luận</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_dgtv.html">Đánh giá thành viên</a></td>
+                </tr>
+				<tr bgcolor="#F2F2F2" style="box-shadow: 4px 3px 5px rgba(0,0,0,0.2);">
+                    <td><a class="ttc2" href="KTHP_tltk.html">Tài liệu tham khảo</a></td>
+                </tr>
+            </table>
+		</td> 
+		</tr>
+		<tr valign="top" >
+		<td  bgcolor="#F9F9F9" class="nd">
+                <h3 class="ttc" id="c4.1">4.1. Remote Access VPN (Client-to-Site VPN)</h3>
+					<p>Remote Access VPN (Client-to-Site VPN) là mô hình mạng riêng ảo cho phép <b>người dùng cá nhân kết nối từ xa vào mạng nội bộ của tổ chức thông qua Internet</b>, 
+					nhưng vẫn đảm bảo tính bảo mật, toàn vẹn và xác thực dữ liệu. Kết nối này được thiết lập thông qua phần mềm VPN Client trên thiết bị người dùng và hệ thống VPN Server đặt tại doanh nghiệp.
+					</p>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.1.1">4.1.1. Đặc điểm</li>
+					</ul>
+					<ul>
+						<li>
+							Hoạt động theo mô hình <b>User-to-LAN</b>, trong đó mỗi người dùng là một điểm truy cập độc lập vào mạng nội bộ.
+						</li>
+						<li>
+							Yêu cầu cơ chế xác thực đa lớp như tài khoản đăng nhập, mã OTP hoặc chứng chỉ số.
+						</li>
+						<li>
+							Dữ liệu được mã hóa bằng các giao thức bảo mật phổ biến như IPsec hoặc SSL/TLS.
+						</li>
+						<li>
+							Cần cài đặt và cấu hình phần mềm VPN Client trên thiết bị đầu cuối.
+						</li>
+						<li>
+							Có khả năng phân quyền truy cập theo vai trò, vị trí công việc hoặc cấp độ bảo mật.
+						</li>
+						<li>
+							Hiệu suất kết nối phụ thuộc vào băng thông và độ ổn định của Internet phía người dùng.
+						</li>
+						<li>
+							Có thể tích hợp với hệ thống quản lý danh tính và truy cập (IAM) của doanh nghiệp.
+
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.1.2">4.1.2. Mục đích</li>
+					</ul>
+					<ul>
+						<li>
+							Cho phép nhân viên làm việc từ xa truy cập hệ thống nội bộ một cách an toàn
+						</li>
+						<li>
+							Bảo vệ dữ liệu khi truy cập từ các mạng không tin cậy như WiFi công cộng
+						</li>
+						<li>
+							Hỗ trợ doanh nghiệp triển khai mô hình làm việc linh hoạt
+						</li>
+						<li>
+							Đảm bảo tính liên tục trong hoạt động khi người dùng không có mặt tại văn phòng
+						</li>
+						<li>
+							Kiểm soát và giám sát truy cập từ bên ngoài vào hệ thống nội bộ
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.1.3">4.1.3. Ví dụ vận dụng thực tế</li>
+						<li>
+							Một nhân viên kinh doanh đi công tác cần truy cập hệ thống quản lý khách hàng của công ty. Người này sử dụng VPN Client trên laptop để đăng nhập vào hệ thống VPN của công ty. 
+							Sau khi kết nối thành công, toàn bộ dữ liệu trao đổi giữa thiết bị và máy chủ được mã hóa, giúp đảm bảo an toàn thông tin ngay cả khi sử dụng WiFi công cộng.
+						</li>
+					</ul>
+					<p align="center"><img src="img/4.1.jpg" alt="Ảnh minh họa Remote Access VPN (Client-to-Site VPN)" width="80%" ></p>
+					<!-->
+				<h3 class="ttc" id="c4.2">4.2. Site to Site VPN</h3>
+					<p> Site to Site VPN là mô hình mạng riêng ảo được sử dụng để <b>kết nối hai hoặc nhiều mạng nội bộ tại các vị trí địa lý khác nhau thông qua Internet</b>, 
+					tạo thành một hệ thống mạng thống nhất, cho phép các mạng này giao tiếp với nhau một cách an toàn và liền mạch.
+					</p>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.2.1">4.2.1. Đặc điểm</li>
+					</ul>
+					<ul>
+						<li>
+							Hoạt động theo mô hình <b>LAN-to-LAN</b>, kết nối trực tiếp giữa các mạng nội bộ
+						</li>
+						<li>
+							Không yêu cầu cài đặt phần mềm VPN trên từng thiết bị người dùng
+						</li>
+						<li>
+							Được thiết lập và quản lý trên các thiết bị mạng như router hoặc firewall
+						</li>
+						<li>
+							Sử dụng các giao thức bảo mật như IPsec để mã hóa dữ liệu truyền giữa các site
+						</li>
+						<li>
+							Kết nối hoạt động tự động và liên tục sau khi cấu hình
+						</li>
+						<li>
+							Có thể mở rộng để kết nối nhiều chi nhánh trong cùng một hệ thống mạng
+						</li>
+						<li>
+							Độ ổn định cao hơn so với Remote Access VPN do ít phụ thuộc vào người dùng cá nhân
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.2.2">4.2.2. Mục đích</li>
+					</ul>
+					<ul>
+						<li>
+							Kết nối các chi nhánh, văn phòng của doanh nghiệp thành một hệ thống thống nhất
+						</li>
+						<li>
+							Cho phép chia sẻ tài nguyên nội bộ như máy chủ, cơ sở dữ liệu, ứng dụng
+						</li>
+						<li>
+							Đảm bảo an toàn dữ liệu khi truyền giữa các địa điểm khác nhau
+						</li>
+						<li>
+							Tối ưu chi phí so với việc sử dụng đường truyền riêng (leased line)
+						</li>
+						<li>
+							Hỗ trợ quản lý tập trung hệ thống mạng của doanh nghiệp
+						</li>
+					</ul>
+					<ul style="list-style-type: none;">
+						<li class="ttc" id="c4.2.3">4.2.3. Ví dụ vận dụng thực tế</li>
+						<li>
+							Một doanh nghiệp bán lẻ có trụ sở chính và nhiều chi nhánh tại các tỉnh. Công ty triển khai Site-to-Site VPN để kết nối toàn bộ hệ thống mạng.
+							Nhờ đó, dữ liệu bán hàng tại các chi nhánh được đồng bộ về hệ thống trung tâm theo thời gian thực, giúp quản lý và ra quyết định nhanh hơn.
+						</li>
+					</ul>
+					<p align="center"><img src="img/4.2.jpg" alt="Ảnh minh họa Site to Site VPN" width="80%" ></p>	
+					<!-->
+				<h3 class="ttc" id="c4.3">4.3.  So sánh sự khác nhau giữa mô hình VPN Site to Site và VPN Client to Site</h3>	
+					<p>Hai mô hình mạng riêng ảo VPN này khá phổ biến, tuy nhiên chúng lại phục vụ cho các mục đích khác nhau và có nhiều điểm riêng.
+					</p>
+					<table width="80%" border="1" cellpadding="5" cellspacing="0" valign="middle" align="center">
+					<tr align="center" bgcolor=" #000556" style="color: white; font-weight:bold">
+						<td>Tiêu chí</td>
+						<td>Remote Access VPN <br>(Client-to-Site)</td>
+						<td>Site-to-Site VPN</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Mục đích sử dụng</b></td>
+						<td width="40%">Cho phép cá nhân truy cập từ xa vào mạng nội bộ doanh nghiệp</td>
+						<td width="40%">Kết nối các mạng nội bộ giữa các văn phòng, chi nhánh</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Đối tượng sử dụng</b></td>
+						<td width="40%">Nhân viên làm việc từ xa, người dùng cá nhân</td>
+						<td width="40%">Doanh nghiệp, tổ chức có nhiều địa điểm hoạt động</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Mô hình kết nối</b></td>
+						<td width="40%">User-to-LAN</td>
+						<td width="40%">LAN-to-LAN</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Cơ chế kết nối</b></td>
+						<td width="40%">Người dùng chủ động kết nối khi cần</td>
+						<td width="40%">Kết nối được thiết lập sẵn và duy trì liên tục</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Thiết bị sử dụng</b></td>
+						<td width="40%">Laptop, điện thoại có cài VPN Client</td>
+						<td width="40%">Router, firewall tại các điểm mạng</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Bảo mật dữ liệu</b></td>
+						<td width="40%">Mã hóa giữa thiết bị cá nhân và hệ thống mạng nội bộ</td>
+						<td width="40%">Mã hóa giữa các mạng nội bộ với nhau</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Khả năng di động</b></td>
+						<td width="40%">Cao, có thể truy cập từ nhiều vị trí khác nhau</td>
+						<td width="40%">Thấp hơn, chủ yếu cố định theo vị trí mạng</td>
+					</tr>
+					<tr>
+						<td width="20%"><b>Khả năng mở rộng</b></td>
+						<td width="40%">Phụ thuộc số lượng người dùng</td>
+						<td width="40%">Dễ mở rộng thêm chi nhánh</td>
+					</tr>
+					</table>
+					
+				<p>⇒ Remote Access VPN phù hợp với môi trường làm việc linh hoạt, nơi người dùng cần truy cập hệ thống từ nhiều địa điểm khác nhau. 
+				Ngược lại, Site-to-Site VPN phù hợp với doanh nghiệp có cấu trúc nhiều chi nhánh, cần kết nối các hệ thống mạng thành một thể thống nhất.
+				</p>
+				<p align="center"><img src="img/4.3.jpg" alt="Ảnh so sánh mô hình VPN Site to Site và VPN Client to Site" width="100%" ></p>		
+	
+		</td>
+		</tr>
+		</table>
+</div>
+</body>
+</html>
