@@ -113,6 +113,8 @@
 						<i>Tunnel</i> là kết nối ảo mà VPN tạo ra trên mạng công cộng, trong đó các gói tin từ mạng con (ví dụ mạng LAN) được bao đóng (encapsulate) vào một giao thức khác để truyền an toàn qua Internet. 
 						<br>Ví dụ, trong IPSec tunnel mode, mỗi gói IP gốc được đóng gói vào một “IP vỏ ngoài” kèm theo header của IPSec (ESP hoặc AH), rồi cuối cùng được giải mã ở đầu nhận. 
 						</li>
+						<p align="center"><img src="img/3.a.jpg" alt="Ảnh sơ đồ VPN Tunnel" width="80%" ></p>
+					<p align="center"><i>Hình ảnh minh họa sơ đồ VPN Tunnel</i></P>
 						<li>
 						Kỹ thuật <i>mã hóa</i> đảm bảo tính bí mật dữ liệu: thuật toán như AES (128-bit hoặc 256-bit) là lựa chọn phổ biến nhờ sức mạnh và hiệu năng tốt, hoặc ChaCha20 được thiết kế cho hiệu năng cao trên thiết bị di động. 
 						Để đảm bảo tính toàn vẹn và chống giả mạo, HMAC (ví dụ HMAC-SHA1/256/512) thường được dùng nhằm tạo kiểm tra tính hợp lệ của gói. 
@@ -126,6 +128,8 @@
 					<p> Hình ảnh minh họa quá trình dữ liệu khi sử dụng VPN (ví dụ OpenVPN): các gói tin từ Host A (góc trái) được xử lý qua giao diện ảo, bị mã hóa và gửi qua mạng (màu đỏ) tới mạng nội bộ của Host B, nơi chúng được giải mã và tiếp tục đến đích cuối.
 					 Mọi dữ liệu chuyền qua “đường hầm” này đều không thể đọc được bởi bên thứ ba nếu thiếu khóa mã hóa. Ví dụ, giao thức OpenVPN sử dụng TLS để tạo phiên bảo mật, sau đó sử dụng AES hoặc ChaCha20 cho mã hóa dữ liệu.
 					</p>
+			<p align="center"><img src="img/3.b.jpg" alt="Ảnh sơ đồ Open VPN" width="80%" ></p>
+					<p align="center"><i>Hình ảnh minh họa sơ đồ Open VPN</i></P>
 					
 					<p> VPN tích hợp ở các tầng khác nhau của mô hình OSI: IPSec hoạt động ở tầng 3 (Network) nên mã hóa mọi gói IP (dịch vụ “giải pháp mạng riêng cho toàn bộ lưu lượng”); trong khi SSL/TLS VPN như OpenVPN hay SSTP hoạt động ở tầng ứng dụng (Layer 7),
 					thường chỉ bảo vệ lưu lượng của các ứng dụng cụ thể hoặc giao diện ảo tạo địa chỉ IP riêng cho user. Do đó IPSec thích hợp để kết nối toàn bộ mạng (site-to-site), còn SSL/TLS VPN thích hợp cho truy cập từ xa cá nhân và granular control ứng dụng.
@@ -172,6 +176,14 @@
 					<p>Các bước trên được áp dụng tương tự ở cả giao thức IPSec, OpenVPN, WireGuard hay SSL/TLS, chỉ khác ở chi tiết kỹ thuật (ví dụ WireGuard chỉ cần hai gói tin để thiết lập khóa và lập tức có thể trao đổi dữ liệu với AES). Bảng trên tóm tắt thông tin chi tiết từng giao thức 
 					(gồm loại handshake, trao đổi khóa, thuật toán mã hóa, cổng và trường hợp sử dụng điển hình). Lưu ý: các giao thức sử dụng các chuẩn RFC mở và thuật toán đã được chứng minh (AES, ChaCha20, Curve25519, HMAC-SHA2, TLS 1.2/1.3, v.v.) để đảm bảo bảo mật đầu cuối.
 					</p>
+			<p align="center"><img src="img/3.c.jpg" alt="Ảnh sơ đồ NAT" width="80%" ></p>
+					<p align="center"><i>Hình ảnh minh họa sơ đồ NAT </i></P>
+			
+			<video width="90%" height="360" controls align="center">
+			  <source src="img/vid2.mp4" type="video/mp4">
+			  Trình duyệt của bạn không hỗ trợ video.
+			</video>
+			<p align="center"><i>Video mô tả nguyên  hoạt động của VPN</i></p>
 				
 		</td>
 		</tr>
